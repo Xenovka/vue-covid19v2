@@ -78,4 +78,13 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.card__wrapper--confirmed,
+.card__wrapper--deaths,
+.card__wrapper--vaccines {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+</style>
