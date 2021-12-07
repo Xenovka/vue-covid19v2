@@ -8,19 +8,23 @@
     </select>
     <div v-if="selected">
       <h1 class="content__country-name">{{ countryName }}</h1>
-      <div class="row card__wrapper">
-        <div class="col-lg-6 card__wrapper--confirmed">
-          <h1>Confirmed</h1>
-          <h3>{{ confirmed }}</h3>
+      <div class="row g-5 card__content-wrapper">
+        <div class="col-lg-6">
+          <div class="card__wrapper">
+            <h3 class="card__number confirmed">{{ confirmed }}</h3>
+            <h1 class="card__title">Confirmed</h1>
+          </div>
         </div>
-        <div class="col-lg-6 card__wrapper--deaths">
-          <h1>Deaths</h1>
-          <h3>{{ deaths }}</h3>
+        <div class="col-lg-6">
+          <div class="card__wrapper">
+            <h3 class="card__number deaths">{{ deaths }}</h3>
+            <h1 class="card__title">Deaths</h1>
+          </div>
         </div>
       </div>
+      <p class="text-center content__last-update--title fw-bold">Last Updated</p>
+      <p class="text-center content__last-update--number">{{ lastUpdated || "Unknown" }}</p>
     </div>
-    <p>{{ lastUpdated }}</p>
-    <router-link class="btn btn-primary" to="/">Back</router-link>
   </div>
 </template>
 

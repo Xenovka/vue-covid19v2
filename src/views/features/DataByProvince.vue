@@ -8,22 +8,30 @@
     </select>
     <div v-if="selected">
       <h1 class="content__province-name">{{ provinceName }}</h1>
-      <div class="row card__wrapper">
-        <div class="col-lg-6 card__wrapper--confirmed">
-          <h3 class="card__title">Confirmed</h3>
-          <h1 class="card__number">{{ confirmed }}</h1>
+      <div class="row g-5 card__content-wrapper">
+        <div class="col-lg-6">
+          <div class="card__wrapper">
+            <h1 class="card__number confirmed">{{ confirmed }}</h1>
+            <h3 class="card__title">Confirmed</h3>
+          </div>
         </div>
-        <div class="col-lg-6 card__wrapper--deaths">
-          <h3 class="card__title">Deaths</h3>
-          <h1 class="card__number">{{ deaths }}</h1>
+        <div class="col-lg-6">
+          <div class="card__wrapper">
+            <h1 class="card__number deaths">{{ deaths }}</h1>
+            <h3 class="card__title">Deaths</h3>
+          </div>
         </div>
-        <div class="col-lg-6 card__wrapper--recovered">
-          <h3 class="card__title">Recovered</h3>
-          <h1 class="card__number">{{ recovered }}</h1>
+        <div class="col-lg-6">
+          <div class="card__wrapper">
+            <h1 class="card__number recovered">{{ recovered }}</h1>
+            <h3 class="card__title">Recovered</h3>
+          </div>
         </div>
-        <div class="col-lg-6 card__wrapper--active">
-          <h3 class="card__title">Active Cases</h3>
-          <h1 class="card__number">{{ active }}</h1>
+        <div class="col-lg-6">
+          <div class="card__wrapper">
+            <h1 class="card__number active">{{ active }}</h1>
+            <h3 class="card__title">Active Cases</h3>
+          </div>
         </div>
       </div>
     </div>

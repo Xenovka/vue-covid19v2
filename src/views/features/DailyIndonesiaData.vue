@@ -1,25 +1,35 @@
 <template>
   <div class="container p-4 d-flex justify-content-center" v-if="indonesiaCovData">
-    <div class="row card__wrapper">
-      <div class="col-lg-6 card__wrapper--confirmed">
-        <h1>Confirmed</h1>
-        <h3>{{ confirmed }}</h3>
+    <div class="row g-5 card__content-wrapper">
+      <h1 class="content__title text-center">Indonesia Daily Covid Cases</h1>
+      <div class="col-lg-6">
+        <div class="card__wrapper">
+          <h1 class="card__number confirmed">{{ confirmed }}</h1>
+          <h3 class="card__title">Confirmed</h3>
+        </div>
       </div>
-      <div class="col-lg-6 card__wrapper--deaths">
-        <h1>Deaths</h1>
-        <h3>{{ deaths }}</h3>
+      <div class="col-lg-6">
+        <div class="card__wrapper">
+          <h1 class="card__number confirmed">{{ deaths }}</h1>
+          <h3 class="card__title">Deaths</h3>
+        </div>
       </div>
-      <div class="col-lg-6 card__wrapper--recovered">
-        <h1>Recovered</h1>
-        <h3>{{ recovered }}</h3>
+      <div class="col-lg-6">
+        <div class="card__wrapper">
+          <h1 class="card__number confirmed">{{ recovered }}</h1>
+          <h3 class="card__title">Recovered</h3>
+        </div>
       </div>
-      <div class="col-lg-6 card__wrapper--active">
-        <h1>Active Cases</h1>
-        <h3>{{ active }}</h3>
+      <div class="col-lg-6">
+        <div class="card__wrapper">
+          <h1 class="card__number confirmed">{{ active }}</h1>
+          <h3 class="card__title">Active Cases</h3>
+        </div>
       </div>
     </div>
   </div>
-  <p class="text-center content__last-update">{{ lastUpdate }}</p>
+  <p class="text-center content__last-update--title fw-bold">Last Updated</p>
+  <p class="text-center content__last-update--number">{{ lastUpdate || "Unknown" }}</p>
 </template>
 
 <script>
