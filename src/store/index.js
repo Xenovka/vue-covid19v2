@@ -6,7 +6,9 @@ import actions from "./actions";
 export default createStore({
   state: {
     globalCovidData: null,
-    globalVaccinationData: null
+    globalVaccinationData: null,
+    indonesiaCovidData: null,
+    indonesiaVaccinationData: null
   },
   mutations,
   actions,

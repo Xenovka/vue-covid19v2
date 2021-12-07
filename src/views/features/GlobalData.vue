@@ -60,7 +60,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .card__wrapper--confirmed,
 .card__wrapper--deaths,
 .card__wrapper--vaccines {
