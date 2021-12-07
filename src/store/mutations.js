@@ -16,5 +16,8 @@ export default {
   },
   updateProvincesSingleData(state, data) {
     state.provincesSingleData = data;
+  },
+  updateCountryCovidData(state, data) {
+    state.countryCovidData = data;
   }
 };

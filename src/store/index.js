@@ -10,7 +10,8 @@ export default createStore({
     indonesiaCovidData: null,
     indonesiaVaccinationData: null,
     provincesCovidData: null,
-    provincesSingleData: null
+    provincesSingleData: null,
+    countryCovidData: null
   },
   mutations,
   actions,

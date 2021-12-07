@@ -7,6 +7,7 @@ import IndonesiaData from "../views/features/IndonesiaData.vue";
 import DailyIndonesiaData from "../views/features/DailyIndonesiaData.vue";
 import DataByProvince from "../views/features/DataByProvince.vue";
 import GlobalData from "../views/features/GlobalData.vue";
+import CountryData from "../views/features/CountryData.vue";
 
 const routes = [
   {
@@ -32,6 +33,10 @@ const routes = [
   {
     path: "/global-data",
     component: GlobalData
+  },
+  {
+    path: "/country",
+    component: CountryData
   },
   {
     path: "/:pathMatch(.*)*",
