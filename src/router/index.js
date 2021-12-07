@@ -5,6 +5,7 @@ import NotFound from "../views/NotFound.vue";
 
 import IndonesiaData from "../views/features/IndonesiaData.vue";
 import DailyIndonesiaData from "../views/features/DailyIndonesiaData.vue";
+import DataByProvince from "../views/features/DataByProvince.vue";
 import GlobalData from "../views/features/GlobalData.vue";
 
 const routes = [
@@ -19,6 +20,10 @@ const routes = [
   {
     path: "/indonesia",
     component: IndonesiaData
+  },
+  {
+    path: "/province",
+    component: DataByProvince
   },
   {
     path: "/daily",

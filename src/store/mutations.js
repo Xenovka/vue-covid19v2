@@ -10,5 +10,11 @@ export default {
   },
   updateIndonesiaVaccinationData(state, data) {
     state.indonesiaVaccinationData = data;
+  },
+  updateProvincesCovidData(state, data) {
+    state.provincesCovidData = data;
+  },
+  updateProvincesSingleData(state, data) {
+    state.provincesSingleData = data;
   }
 };
