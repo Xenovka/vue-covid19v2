@@ -72,12 +72,4 @@ export default {
   }
 };
 </script>
-<style scoped>
-.card__wrapper--confirmed,
-.card__wrapper--deaths {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-</style>
+<style scoped></style>

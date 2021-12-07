@@ -10,20 +10,20 @@
       <h1 class="content__province-name">{{ provinceName }}</h1>
       <div class="row card__wrapper">
         <div class="col-lg-6 card__wrapper--confirmed">
-          <h1>Confirmed</h1>
-          <h3>{{ confirmed }}</h3>
+          <h3 class="card__title">Confirmed</h3>
+          <h1 class="card__number">{{ confirmed }}</h1>
         </div>
         <div class="col-lg-6 card__wrapper--deaths">
-          <h1>Deaths</h1>
-          <h3>{{ deaths }}</h3>
+          <h3 class="card__title">Deaths</h3>
+          <h1 class="card__number">{{ deaths }}</h1>
         </div>
         <div class="col-lg-6 card__wrapper--recovered">
-          <h1>Recovered</h1>
-          <h3>{{ recovered }}</h3>
+          <h3 class="card__title">Recovered</h3>
+          <h1 class="card__number">{{ recovered }}</h1>
         </div>
         <div class="col-lg-6 card__wrapper--active">
-          <h1>Active Cases</h1>
-          <h3>{{ active }}</h3>
+          <h3 class="card__title">Active Cases</h3>
+          <h1 class="card__number">{{ active }}</h1>
         </div>
       </div>
     </div>
@@ -81,14 +81,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.card__wrapper--confirmed,
-.card__wrapper--deaths,
-.card__wrapper--recovered,
-.card__wrapper--active {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-</style>
+<style scoped></style>
