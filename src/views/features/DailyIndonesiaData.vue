@@ -13,7 +13,7 @@
         <h1>Recovered</h1>
         <h3>{{ recovered }}</h3>
       </div>
-      <div class="col-lg-6 card__wrapper--deaths">
+      <div class="col-lg-6 card__wrapper--active">
         <h1>Active Cases</h1>
         <h3>{{ active }}</h3>
       </div>
@@ -63,7 +63,7 @@ export default {
 .card__wrapper--confirmed,
 .card__wrapper--deaths,
 .card__wrapper--recovered,
-.card__wrapper--vaccines {
+.card__wrapper--active {
   display: flex;
   flex-direction: column;
   justify-content: center;
