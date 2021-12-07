@@ -3,8 +3,9 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import NotFound from "../views/NotFound.vue";
 
-import GlobalData from "../views/features/GlobalData.vue";
 import IndonesiaData from "../views/features/IndonesiaData.vue";
+import DailyIndonesiaData from "../views/features/DailyIndonesiaData.vue";
+import GlobalData from "../views/features/GlobalData.vue";
 
 const routes = [
   {
@@ -18,6 +19,10 @@ const routes = [
   {
     path: "/indonesia",
     component: IndonesiaData
+  },
+  {
+    path: "/daily",
+    component: DailyIndonesiaData
   },
   {
     path: "/global-data",
