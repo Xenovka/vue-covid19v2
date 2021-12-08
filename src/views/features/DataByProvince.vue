@@ -1,4 +1,5 @@
 <template>
+  <base-navbar />
   <div class="container p-4 text-center" v-if="provincesCovData">
     <select v-model="selected">
       <option disabled selected :value="null">Select Country</option>
@@ -9,30 +10,31 @@
     <div v-if="selected">
       <h1 class="content__province-name">{{ provinceName }}</h1>
       <div class="row g-5 card__content-wrapper">
-        <div class="col-lg-6">
+        <div class="col-lg-5 offset-lg-1">
           <div class="card__wrapper">
             <h1 class="card__number confirmed">{{ confirmed }}</h1>
             <h3 class="card__title">Confirmed</h3>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-5">
           <div class="card__wrapper">
             <h1 class="card__number deaths">{{ deaths }}</h1>
             <h3 class="card__title">Deaths</h3>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-5 offset-lg-1">
           <div class="card__wrapper">
             <h1 class="card__number recovered">{{ recovered }}</h1>
             <h3 class="card__title">Recovered</h3>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-5">
           <div class="card__wrapper">
             <h1 class="card__number active">{{ active }}</h1>
             <h3 class="card__title">Active Cases</h3>
           </div>
         </div>
+        <base-footer />
       </div>
     </div>
   </div>
@@ -41,7 +43,16 @@
 <script>
 import { computed, ref, watch } from "vue";
 import { useStore } from "vuex";
+
+import numberFormat from "../../composable/numberFormat";
+import BaseFooter from "../../components/BaseFooter.vue";
+import BaseNavbar from "../../components/BaseNavbar.vue";
+
 export default {
+  components: {
+    BaseFooter,
+    BaseNavbar
+  },
   setup() {
     const store = useStore();
 
@@ -61,10 +72,10 @@ export default {
       getProvincesCovidData(v).then(() => {
         const { provinsi, kasus, dirawat, sembuh, meninggal } = provincesSingleData.value;
         provinceName.value = provinsi;
-        confirmed.value = kasus;
-        recovered.value = sembuh;
-        deaths.value = meninggal;
-        active.value = dirawat;
+        confirmed.value = numberFormat(kasus);
+        recovered.value = numberFormat(sembuh);
+        deaths.value = numberFormat(meninggal);
+        active.value = numberFormat(dirawat);
       });
     });
 

@@ -21,18 +21,18 @@
 }
 
 .card__wrapper {
+  height: 110%;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 6px 0px;
 }
 
 .container {
   margin-top: 5rem;
-}
-
-.card__wrapper {
-  padding: 2rem 1.2rem;
 }
 
 select {
@@ -76,20 +76,20 @@ p {
 .content__title {
   font-size: 3.6rem;
   font-weight: 700;
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.content__title {
+  margin-top: 0px !important;
+  margin-bottom: 1rem;
 }
 
 .card__vaccine--title {
   font-size: 2.8rem;
   font-weight: 600;
-  padding-top: 4rem;
+  padding-top: 2rem;
   margin-bottom: -1rem;
-}
-
-.card__wrapper {
-  border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 6px 0px;
 }
 
 .card__title {
