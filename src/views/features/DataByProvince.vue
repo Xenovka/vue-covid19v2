@@ -2,7 +2,7 @@
   <base-navbar />
   <div class="container p-4 text-center" v-if="provincesCovData">
     <select v-model="selected">
-      <option disabled selected :value="null">Select Country</option>
+      <option disabled selected :value="null">Select Province</option>
       <option v-for="province in provinces" :value="province" :key="province">
         {{ province }}
       </option>
