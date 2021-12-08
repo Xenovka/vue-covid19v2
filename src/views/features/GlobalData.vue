@@ -15,7 +15,7 @@
           <h3 class="card__title">Deaths</h3>
         </div>
       </div>
-      <h1 class="card__vaccine--title text-center">Vaccination Data</h1>
+      <h1 class="card__vaccine--title text-center">Global Vaccination Data</h1>
       <div class="col-lg-5 offset-lg-1">
         <div class="card__wrapper">
           <h1 class="card__number vaccines">{{ vaccineFDose }}</h1>

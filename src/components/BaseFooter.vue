@@ -6,8 +6,20 @@
 </template>
 
 <style scoped>
+p,
 a {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+a {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+  p,
+  a {
+    font-size: 1.2rem;
+  }
 }
 </style>

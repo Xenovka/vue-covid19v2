@@ -2,6 +2,15 @@
   <router-view></router-view>
 </template>
 
+<script>
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
+
+export default {};
+</script>
+
 <style>
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
 
@@ -104,5 +113,30 @@ p {
 
 .content__last-update--title {
   margin-top: 4rem !important;
+}
+
+@media only screen and (max-width: 620px) {
+  div > .container {
+    padding-top: 7rem !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .card__number {
+    font-size: 2.8rem;
+  }
+
+  .content__province-name,
+  .content__country-name,
+  .card__vaccine--title,
+  .content__title {
+    font-size: 2.4rem;
+    margin-bottom: 0;
+  }
+
+  select {
+    font-size: 1.4rem !important;
+    padding: 1rem;
+  }
 }
 </style>

@@ -65,7 +65,7 @@ export default {
       recovered.value = numberFormat(dataObj["sembuh"]);
       deaths.value = numberFormat(dataObj["meninggal"]);
       active.value = numberFormat(dataObj["dirawat"]);
-      lastUpdate.value = dataObj["created"];
+      lastUpdate.value = new Date(dataObj["created"]);
     });
 
     return {

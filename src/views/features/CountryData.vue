@@ -64,7 +64,7 @@ export default {
           countryName.value = country;
           confirmed.value = numberFormat(confCases);
           deaths.value = numberFormat(deathCases);
-          lastUpdated.value = updated;
+          lastUpdated.value = new Date(updated);
         }
       }
     });
@@ -87,3 +87,11 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+@media only screen and (max-width: 992px) {
+  .card__content-wrapper {
+    margin: 0 auto;
+  }
+}
+</style>
